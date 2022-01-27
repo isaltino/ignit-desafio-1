@@ -32,7 +32,7 @@ export function TaskList() {
     setTasks(
       tasks.map((tesk) => {
         if (tesk.id == id) {
-          tesk.isComplete = true;
+          tesk.isComplete = !tesk.isComplete;
         }
         return tesk;
       })
